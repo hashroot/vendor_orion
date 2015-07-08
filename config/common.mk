@@ -125,10 +125,23 @@ PRODUCT_PACKAGES += \
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
-    libstagefright_soft_ffmpegadec \
-    libstagefright_soft_ffmpegvdec \
-    libFFmpegExtractor \
+    libffmpeg_extractor \
+    libffmpeg_omx \
     media_codecs_ffmpeg.xml
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.sf.omx-plugin=libffmpeg_omx.so \
+    media.sf.extractor-plugin=libffmpeg_extractor.so
+
+# CM Hardware Abstraction Framework
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
+
+# Screen recorder package and lib
+PRODUCT_PACKAGES += \
+    ScreenRecorder \
+    libscreenrecorder
 
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
