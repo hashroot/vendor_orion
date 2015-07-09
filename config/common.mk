@@ -15,6 +15,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
+    ro.layers.noIcon=noIcon \
     ro.com.android.dataroaming=false \
     ro.config.ringtone=Orion.ogg \
     ro.config.notification_sound=Castor.ogg
