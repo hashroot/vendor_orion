@@ -86,6 +86,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX
 
+#Eleven Music Player
+PRODUCT_PACKAGES += \
+	Eleven
+
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
