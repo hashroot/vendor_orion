@@ -148,6 +148,10 @@ PRODUCT_COPY_FILES += \
 	vendor/orion/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
 	vendor/orion/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
+# Kernel Auditor
+PRODUCT_COPY_FILES += \
+    vendor/orion/prebuilt/common/etc/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
+
 # Versioning System
 # orionLP first version.
 PRODUCT_VERSION_MAJOR = 5.1.1
