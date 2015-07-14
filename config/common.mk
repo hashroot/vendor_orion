@@ -101,7 +101,8 @@ PRODUCT_PACKAGES += \
     SlimLauncher \
     LatinIME \
     BluetoothExt \
-    DashClock
+    DashClock \
+	KernelAdiutor
 
 # orionFileManager removed until updated
 # Extra tools
@@ -160,10 +161,6 @@ vendor/orion/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
 PRODUCT_COPY_FILES += \
 	vendor/orion/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
 	vendor/orion/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-
-# Kernel Auditor
-PRODUCT_COPY_FILES += \
-    vendor/orion/prebuilt/common/app/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
