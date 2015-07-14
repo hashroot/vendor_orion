@@ -150,7 +150,13 @@ PRODUCT_COPY_FILES += \
 
 # Kernel Auditor
 PRODUCT_COPY_FILES += \
-    vendor/orion/prebuilt/common/etc/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
+    vendor/orion/prebuilt/common/app/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
+
+# Viper4Android
+PRODUCT_COPY_FILES += \
+     vendor/orion/prebuilt/common/app/ViPER4Android/ViPER4Android_FX_A4.x.apk:system/app/ViPER4Android/ViPER4Android_FX_A4.x.apk \
+     vendor/orion/prebuilt/common/app/ViPER4Android/addon.d/95-LolliViPER.sh:system/addon.d/95-LolliViPER.sh \
+     vendor/orion/prebuilt/common/app/ViPER4Android/audio_policy.sh:system/audio_policy.sh
 
 # Versioning System
 # orionLP first version.
