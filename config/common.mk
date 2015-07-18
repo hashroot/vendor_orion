@@ -83,8 +83,8 @@ PRODUCT_PACKAGES += \
     PhaseBeam
 
 # AudioFX
-PRODUCT_PACKAGES += \
-    AudioFX
+#PRODUCT_PACKAGES += \
+#   AudioFX
 
 #Eleven Music Player
 PRODUCT_PACKAGES += \
