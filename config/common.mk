@@ -180,10 +180,12 @@ ifndef ORION_BUILD_TYPE
 ifeq ($(ORION_RELEASE),true)
     ORION_BUILD_TYPE := OFFICIAL
     PLATFORM_VERSION_CODENAME := OFFICIAL
+    ORION_POSTFIX := -$(shell date +"%Y%m%d")
+
 else
     ORION_BUILD_TYPE := UNOFFICIAL
     PLATFORM_VERSION_CODENAME := UNOFFICIAL
-    ORION_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
+    ORION_POSTFIX := -$(shell date +"%Y%m%d")
 endif
 endif
 
