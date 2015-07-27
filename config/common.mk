@@ -82,9 +82,6 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     PhaseBeam
 
-# AudioFX
-#PRODUCT_PACKAGES += \
-#   AudioFX
 
 #Eleven Music Player
 PRODUCT_PACKAGES += \
