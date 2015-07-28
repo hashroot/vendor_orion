@@ -94,7 +94,7 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    SlimCenter \
+    SlimOTA \
     SlimLauncher \
     LatinIME \
     BluetoothExt \
