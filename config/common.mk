@@ -98,8 +98,13 @@ PRODUCT_PACKAGES += \
     SlimLauncher \
     LatinIME \
     BluetoothExt \
-    DashClock \
-	KernelAdiutor
+	KernelAdiutor \
+    DashClock 
+
+# Kernel Auditor
+PRODUCT_COPY_FILES += \
+    vendor/orion/prebuilt/common/app/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
+
 
 # orionFileManager removed until updated
 # Extra tools
