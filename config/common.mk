@@ -99,6 +99,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
 	KernelAdiutor \
+	WallpaperPicker \
     DashClock 
 
 # Kernel Auditor
