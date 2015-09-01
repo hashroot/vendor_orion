@@ -100,6 +100,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
 	KernelAdiutor \
 	WallpaperPicker \
+	OrionWalls \
     DashClock 
 
 # Kernel Auditor
