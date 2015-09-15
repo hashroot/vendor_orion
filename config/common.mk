@@ -99,7 +99,6 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
 	KernelAdiutor \
-	WallpaperPicker \
 	OrionWalls \
     DashClock 
 
