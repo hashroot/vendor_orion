@@ -102,6 +102,12 @@ PRODUCT_PACKAGES += \
 	OrionWalls \
     DashClock 
 
+# Screen recorder  
+ PRODUCT_PACKAGES += \  
+     ScreenRecorder \  
+     libscreenrecorder 
+
+
 # Kernel Auditor
 PRODUCT_COPY_FILES += \
     vendor/orion/prebuilt/common/app/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
