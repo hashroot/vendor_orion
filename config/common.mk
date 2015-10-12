@@ -102,11 +102,10 @@ PRODUCT_PACKAGES += \
 	OrionWalls \
     DashClock 
 
-# Screen recorder  
- PRODUCT_PACKAGES += \  
-     ScreenRecorder \  
-     libscreenrecorder 
-
+# Screen Recorder
+PRODUCT_PACKAGES += \
+	ScreenRecorder \
+	libscreenrecorder
 
 # Kernel Auditor
 PRODUCT_COPY_FILES += \
