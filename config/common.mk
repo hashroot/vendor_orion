@@ -71,7 +71,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Basic \
     LiveWallpapersPicker \
-    PhaseBeam
+    PhaseBeam \
+    Chromium
 
 # AudioFX
 PRODUCT_PACKAGES += \
@@ -117,7 +118,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
    vendor/orion/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
    vendor/orion/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-   
+
 # Layers Manager
 PRODUCT_COPY_FILES += \
 vendor/orion/prebuilt/common/app/LayersManager/layersmanager.apk:system/app/LayersManager/layersmanager.apk
@@ -184,4 +185,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.orion.buildtype=$(ORION_BUILD_TYPE)
 
 EXTENDED_POST_PROCESS_PROPS := vendor/orion/tools/orion_process_props.py
-
