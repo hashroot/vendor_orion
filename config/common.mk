@@ -167,7 +167,7 @@ PRODUCT_COPY_FILES += \
 
 # Layers Manager
 PRODUCT_COPY_FILES += \
-vendor/orion/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
+vendor/orion/prebuilt/common/app/layersmanager.apk:system/app/LayersManager/layersmanager.apk
 
 # SuperSU
 PRODUCT_COPY_FILES += \
@@ -185,7 +185,7 @@ PRODUCT_COPY_FILES += \
 # orionLP first version.
 PRODUCT_VERSION_MAJOR = 5.1.1
 PRODUCT_VERSION_MINOR = release
-PRODUCT_VERSION_MAINTENANCE = 1.7
+PRODUCT_VERSION_MAINTENANCE = 1.8
 ifdef ORION_BUILD_EXTRA
     ORION_POSTFIX := -$(ORION_BUILD_EXTRA)
 endif
