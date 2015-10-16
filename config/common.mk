@@ -100,6 +100,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
 	KernelAdiutor \
 	OrionWalls \
+	QuickBoot \
     DashClock 
 
 # Screen Recorder
@@ -165,22 +166,26 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/orion/overlay/common
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
 
-# Layers Manager
+# Layers Manager (thanks to Bitsyko team)
 PRODUCT_COPY_FILES += \
 vendor/orion/prebuilt/common/app/layersmanager.apk:system/app/LayersManager/layersmanager.apk
 
-# SuperSU
+# SuperSU (thanks to chainfire)
 PRODUCT_COPY_FILES += \
 	vendor/orion/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
 	vendor/orion/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
-# Viper4Android
+# Viper4Android (thanks to Viper520)
 PRODUCT_COPY_FILES += \
      vendor/orion/prebuilt/common/app/ViPER4Android/ViPER4Android_FX_A4.x.apk:system/app/ViPER4Android/ViPER4Android_FX_A4.x.apk \
      vendor/orion/prebuilt/common/app/ViPER4Android/addon.d/95-LolliViPER.sh:system/addon.d/95-LolliViPER.sh \
      vendor/orion/prebuilt/common/app/ViPER4Android/audio_policy.sh:system/audio_policy.sh \
 	 vendor/orion/prebuilt/common/app/ViPER4Android/su.d/50viper.sh:system/su.d/50viper.sh
 
+#QuickBoot (thanks to arter97)
+PRODUCT_COPY_FILES += \
+	vendor/orion/prebuilt/common/app/QuickBoot.apk:system/priv-app/QuickBoot/QuickBoot.apk
+	
 # Versioning System
 # orionLP first version.
 PRODUCT_VERSION_MAJOR = 5.1.1
