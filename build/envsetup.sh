@@ -47,23 +47,29 @@ function orion_add_hmm_entry()
 {
     f_name="${1}"
     f_desc="${2}"
-
-function slim_append_hmm()
-{
-    HMM_DESCRIPTIVE=("${HMM_DESCRIPTIVE[@]}" "$(_slim_build_hmm "$1" "$2")")
 }
 
-function slim_add_hmm_entry()
+function _orion_build_hmm() #hidden
+{
+    printf "%-8s %s" "${1}:" "${2}"
+}
+
+function orion_append_hmm()
+{
+    HMM_DESCRIPTIVE=("${HMM_DESCRIPTIVE[@]}" "$(_orion_build_hmm "$1" "$2")")
+}
+
+function orion_add_hmm_entry()
 {
     for c in ${!HMM_DESCRIPTIVE[*]}
     do
         if [[ "${1}" == $(echo "${HMM_DESCRIPTIVE[$c]}" | cut -f1 -d":") ]]
         then
-            HMM_DESCRIPTIVE[${c}]="$(_slim_build_hmm "$1" "$2")"
+            HMM_DESCRIPTIVE[${c}]="$(_orion_build_hmm "$1" "$2")"
             return
         fi
     done
-    slim_append_hmm "$1" "$2"
+    orion_append_hmm "$1" "$2"
 }
 
 function orionremote()
