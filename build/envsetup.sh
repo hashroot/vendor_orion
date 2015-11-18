@@ -1,8 +1,9 @@
 # Orion functions that extend build/envsetup.sh
 
 
-function orion_device_combos() {
-    local device
+function orion_device_combos()
+{
+    local T list_file variant device
 
     T="$(gettop)"
     list_file="${T}/vendor/orion/orion.devices"
@@ -37,11 +38,13 @@ function orion_device_combos() {
     done < "${list_file}"
 }
 
-function orion_rename_function() {
+function orion_rename_function()
+{
     eval "original_orion_$(declare -f ${1})"
 }
 
-function orion_add_hmm_entry() {
+function orion_add_hmm_entry()
+{
     f_name="${1}"
     f_desc="${2}"
 
