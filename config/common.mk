@@ -185,3 +185,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.orion.buildtype=$(ORION_BUILD_TYPE)
 
 EXTENDED_POST_PROCESS_PROPS := vendor/orion/tools/orion_process_props.py
+
+-include vendor/orion/config/optimizations/sm.mk
+
+
