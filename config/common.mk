@@ -186,6 +186,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 EXTENDED_POST_PROCESS_PROPS := vendor/orion/tools/orion_process_props.py
 
--include vendor/orion/config/optimizations/sm.mk
-
 
