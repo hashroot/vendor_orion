@@ -6,6 +6,6 @@ $(call inherit-product, vendor/orion/config/common_apn.mk)
 PRODUCT_PACKAGES += \
     Stk
 
-# Mms
+# SMS
 PRODUCT_PACKAGES += \
-	Mms
+	messaging
