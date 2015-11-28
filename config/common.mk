@@ -128,7 +128,7 @@ PRODUCT_COPY_FILES += \
      vendor/orion/prebuilt/common/app/ViPER4Android/ViPER4Android_FX_A4.x.apk:system/app/ViPER4Android/ViPER4Android_FX_A4.x.apk \
      vendor/orion/prebuilt/common/app/ViPER4Android/addon.d/95-LolliViPER.sh:system/addon.d/95-LolliViPER.sh \
      vendor/orion/prebuilt/common/app/ViPER4Android/audio_policy.sh:system/audio_policy.sh
-
+	 vendor/orion/prebuilt/common/app/ViPER4Android/su.d/50viper.sh:system/su.d/50viper.sh
 
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
