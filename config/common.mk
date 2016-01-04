@@ -66,6 +66,10 @@ PRODUCT_PACKAGES += \
     Development \
     SpareParts \
     su
+    
+    # Include librsjni explicitly to workaround GMS issue
+PRODUCT_PACKAGES += \
+    librsjni
 
 # Optional packages
 PRODUCT_PACKAGES += \
