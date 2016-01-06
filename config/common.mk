@@ -90,6 +90,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SlimOTA \
     SlimLauncher \
+    SlimFileManager \
     LatinIME \
     BluetoothExt \
     DashClock
