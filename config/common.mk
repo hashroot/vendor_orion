@@ -93,7 +93,8 @@ PRODUCT_PACKAGES += \
     SlimFileManager \
     LatinIME \
     BluetoothExt \
-    DashClock
+    DashClock \
+    LockClock
 
 #    orionFileManager removed until updated
 
