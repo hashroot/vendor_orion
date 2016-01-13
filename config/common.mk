@@ -131,7 +131,7 @@ vendor/orion/prebuilt/common/app/LayersManager/layersmanager.apk:system/app/Laye
 
 # Layers Backup
 PRODUCT_COPY_FILES += \
-    vendor/broken/prebuilt/common/bin/71-layers.sh:system/addon.d/71-layers.sh
+vendor/orion/prebuilt/common/bin/71-layers.sh:system/addon.d/71-layers.sh
  
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
