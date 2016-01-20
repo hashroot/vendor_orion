@@ -132,7 +132,7 @@ PRODUCT_COPY_FILES += \
    vendor/orion/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf \
    vendor/orion/prebuilt/common/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
    vendor/orion/prebuilt/common/su.d//15v4a.sh:system/su.d/15v4a.sh \
-   vendor/orion/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
+   vendor/orion/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
    vendor/orion/prebuilt/common/app/Viper4Android/Viper4Android.apk:system/priv-app/Viper4Android/Viper4Android.apk 
 
 # Layers Manager
