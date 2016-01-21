@@ -127,12 +127,9 @@ PRODUCT_COPY_FILES += \
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
-   vendor/orion/prebuilt/common/bin/audio_policy.sh:install/bin/audio_policy.sh \
-   vendor/orion/prebuilt/common/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh \
-   vendor/orion/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf \
-   vendor/orion/prebuilt/common/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
-   vendor/orion/prebuilt/common/su.d//15v4a.sh:system/su.d/15v4a.sh \
-   vendor/orion/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+   vendor/orion/prebuilt/common/bin/audio_policy.sh:system/audio_policy.sh \
+   vendor/orion/prebuilt/common/addon.d/95-LolliViPER.sh:system/addon.d/95-LolliViPER.sh \
+   vendor/orion/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh \
    vendor/orion/prebuilt/common/app/Viper4Android/Viper4Android.apk:system/priv-app/Viper4Android/Viper4Android.apk 
 
 # Layers Manager

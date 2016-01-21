@@ -1,7 +1,7 @@
 #!/sbin/sh
 # 
-# /system/addon.d/91-v4a.sh
-# This script backs up /system/lib/soundfx/libv4a_fx_ics.so, etc/audio_effects.conf, and vendor/etc/audio_effects.conf
+# /system/addon.d/95-LolliViPER.sh
+# This script backs up /system/priv-app/ViPER4Android_FX_A4.x/ViPER4Android_FX_A4.x.apk
 # /system is formatted and reinstalled, then the file is restored.
 #
 
@@ -9,11 +9,8 @@
 
 list_files() {
 cat <<EOF
-lib/soundfx/libv4a_fx_ics.so
-etc/audio_effects.conf
-priv-app/Viper4Android/Viper4Android.apk
-su.d/15v4a.sh
-vendor/etc/audio_effects.conf
+priv-app/ViPER4Android_FX_A4.x/ViPER4Android_FX_A4.x.apk
+su.d/50viper.sh
 EOF
 }
 
@@ -35,7 +32,7 @@ case "$1" in
 		rm /system/app/DSPManager/DSPManager.apk
 		rm /system/priv-app/MusicFX.apk
 		rm /system/priv-app/MusicFX/MusicFX.apk
-  ;;
+		;;
   pre-backup)
     # Stub
   ;;
@@ -43,10 +40,11 @@ case "$1" in
     # Stub
   ;;
   pre-restore)
-    mkdir /system/su.d
+    # Stub
   ;;
   post-restore)
+    # Stub
 	# audio_policy.conf edits for V4A compatibility
-	sed -i '/deep_buffer {/,/}/s/^/#/' /system/etc/audio_policy.conf
+sed -i '/deep_buffer {/,/}/s/^/#/' /system/etc/audio_policy.conf
   ;;
 esac
