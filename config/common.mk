@@ -125,6 +125,13 @@ PRODUCT_COPY_FILES += \
    vendor/orion/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
    vendor/orion/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
+# Viper4Android
+PRODUCT_COPY_FILES += \
+   vendor/orion/prebuilt/common/bin/audio_policy.sh:system/audio_policy.sh \
+   vendor/orion/prebuilt/common/addon.d/95-LolliViPER.sh:system/addon.d/95-LolliViPER.sh \
+   vendor/orion/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh \
+   vendor/orion/prebuilt/common/app/Viper4Android/Viper4Android.apk:system/priv-app/Viper4Android/Viper4Android.apk 
+
 # Layers Manager
 PRODUCT_COPY_FILES += \
 vendor/orion/prebuilt/common/app/LayersManager/layersmanager.apk:system/app/LayersManager/layersmanager.apk
