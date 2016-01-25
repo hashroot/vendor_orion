@@ -89,14 +89,11 @@ PRODUCT_PACKAGES += \
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     SlimOTA \
-    SlimFileManager \
     LatinIME \
     BluetoothExt \
     DashClock \
     LockClock \
     Launcher3
-
-#    orionFileManager removed until updated
 
 # Extra tools
 PRODUCT_PACKAGES += \
