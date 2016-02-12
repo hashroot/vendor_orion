@@ -89,7 +89,6 @@ PRODUCT_PACKAGES += \
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     SlimOTA \
-    LatinIME \
     BluetoothExt \
     DashClock \
     LockClock \
@@ -122,6 +121,12 @@ PRODUCT_COPY_FILES += \
    vendor/orion/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
    vendor/orion/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
+#GoogleKeyboard
+PRODUCT_COPY_FILES += \
+   vendor/orion/prebuilt/common/app/GoogleKeyboard/GoogleKeyboard.apk:system/app/GoogleKeyboard/GoogleKeyboard.apk \
+   vendor/orion/prebuilt/common/app/GoogleKeyboard/libjni_keyboarddecoder.so:system/lib/libjni_keyboarddecoder.so \
+   vendor/orion/prebuilt/common/app/GoogleKeyboard/libjni_unbundled_latinimegoogle.so:/system/lib/libjni_unbundled_latinimegoogle.so
+    
 # Viper4Android
 PRODUCT_COPY_FILES += \
    vendor/orion/prebuilt/common/bin/audio_policy.sh:system/audio_policy.sh \
