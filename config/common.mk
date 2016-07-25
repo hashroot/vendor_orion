@@ -92,6 +92,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     DashClock \
     LockClock \
+    masquerade \
     Launcher3
 
 # Extra tools
