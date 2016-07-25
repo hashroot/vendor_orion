@@ -119,7 +119,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # SuperSU
 ifneq ($(NEEDS_SYSTEMMODE_SU),true)
  PRODUCT_COPY_FILES += \
-     vendor/orion/prebuilt/common/etc/SystemModeSuperSU.zip:system/addon.d/SuperSU.zip \
+     vendor/orion/prebuilt/common/etc/SystemModeSuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
      vendor/orion/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 else
  PRODUCT_COPY_FILES += \
