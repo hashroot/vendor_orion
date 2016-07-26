@@ -3,7 +3,3 @@ allow mediaserver mediaserver_tmpfs:file { read write execute };
 
 # For camera
 allow mediaserver media_rw_data_file:file write;
-
-# sdcardfs
-allow mediaserver media_rw_data_file:dir { create rw_dir_perms };
-allow mediaserver media_rw_data_file:file create_file_perms;
