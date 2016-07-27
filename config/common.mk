@@ -141,14 +141,6 @@ PRODUCT_COPY_FILES += \
    vendor/orion/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh \
    vendor/orion/prebuilt/common/app/Viper4Android/Viper4Android.apk:system/priv-app/Viper4Android/Viper4Android.apk 
 
-# Layers Manager
-PRODUCT_COPY_FILES += \
-vendor/orion/prebuilt/common/app/LayersManager/layersmanager.apk:system/app/LayersManager/layersmanager.apk
-
-# Layers Backup
-PRODUCT_COPY_FILES += \
-vendor/orion/prebuilt/common/bin/71-layers.sh:system/addon.d/71-layers.sh
- 
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
