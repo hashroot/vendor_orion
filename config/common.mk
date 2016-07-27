@@ -117,6 +117,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.sf.omx-plugin=libffmpeg_omx.so \
     media.sf.extractor-plugin=libffmpeg_extractor.so
 
+# Substratum
+PRODUCT_COPY_FILES += \
+vendor/orion/prebuilt/common/app/Substratum/Substratum.apk:system/app/Substratum/Substratum.apk
+
 # SuperSU
 ifneq ($(NEEDS_SYSTEMMODE_SU),true)
  PRODUCT_COPY_FILES += \
