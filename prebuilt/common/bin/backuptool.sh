@@ -6,6 +6,7 @@
 export C=/tmp/backupdir
 export S=/system
 export V=OrionOS
+export LCDDENSITY="ro.sf.lcd_density"
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 cp -f /tmp/install/bin/backuptool.functions /tmp
@@ -70,6 +71,7 @@ done
 
 case "$1" in
   backup)
+    grep $LCDDENSITY /system/build.prop > /tmp/orion_dpi  
     mkdir -p $C
     if check_prereq; then
         if check_whitelist system; then
@@ -83,6 +85,14 @@ case "$1" in
     run_stage post-backup
   ;;
   restore)
+    ORIONDPI=`cat /tmp/orion_dpi`
+    if [ "${ORIONDPI/$LCDDENSITY}" != "$ORIONDPI" ]
+    then
+        mv /system/build.prop /system/build.prop.new
+        sed "s/ro\.sf\.lcd_density=.*/$ORIONDPI/g" /system/build.prop.new > /system/build.prop
+        chmod 644 /system/build.prop
+        rm -f /system/build.prop.new
+    fi  
     if check_prereq; then
         if check_whitelist tmp; then
             exit 127
