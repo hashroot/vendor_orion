@@ -65,8 +65,12 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     Development \
     SpareParts \
-    su
-    
+    su \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+	telephony-ext
+
     # Include librsjni explicitly to workaround GMS issue
 PRODUCT_PACKAGES += \
     librsjni
@@ -137,13 +141,13 @@ PRODUCT_COPY_FILES += \
    vendor/orion/prebuilt/common/app/GoogleKeyboard/GoogleKeyboard.apk:system/app/GoogleKeyboard/GoogleKeyboard.apk \
    vendor/orion/prebuilt/common/app/GoogleKeyboard/libjni_keyboarddecoder.so:system/lib/libjni_keyboarddecoder.so \
    vendor/orion/prebuilt/common/app/GoogleKeyboard/libjni_unbundled_latinimegoogle.so:/system/lib/libjni_unbundled_latinimegoogle.so
-    
+
 # Viper4Android
 PRODUCT_COPY_FILES += \
    vendor/orion/prebuilt/common/bin/audio_policy.sh:system/audio_policy.sh \
    vendor/orion/prebuilt/common/addon.d/95-LolliViPER.sh:system/addon.d/95-LolliViPER.sh \
    vendor/orion/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh \
-   vendor/orion/prebuilt/common/app/Viper4Android/Viper4Android.apk:system/priv-app/Viper4Android/Viper4Android.apk 
+   vendor/orion/prebuilt/common/app/Viper4Android/Viper4Android.apk:system/priv-app/Viper4Android/Viper4Android.apk
 
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
@@ -206,5 +210,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.orion.buildtype=$(ORION_BUILD_TYPE)
 
 EXTENDED_POST_PROCESS_PROPS := vendor/orion/tools/orion_process_props.py
-
 
