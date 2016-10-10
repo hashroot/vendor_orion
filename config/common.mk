@@ -157,7 +157,7 @@ PRODUCT_COPY_FILES += \
 # Versioning System
 # OrionOS first version.
 PRODUCT_VERSION_MAJOR = 6.0.1
-PRODUCT_VERSION_MINOR = 2.6.1
+PRODUCT_VERSION_MINOR = 2.7
 PRODUCT_VERSION_MAINTENANCE = release
 ifdef ORION_BUILD_EXTRA
     ORION_POSTFIX := -$(ORION_BUILD_EXTRA)
@@ -206,5 +206,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.orion.buildtype=$(ORION_BUILD_TYPE)
 
 EXTENDED_POST_PROCESS_PROPS := vendor/orion/tools/orion_process_props.py
-
-
