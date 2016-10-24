@@ -158,6 +158,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/orion/overlay/common
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
 
+# Squisher Location
+SQUISHER_SCRIPT := vendor/orion/tools/squisher
+
 # Versioning System
 # OrionOS first version.
 PRODUCT_VERSION_MAJOR = 3.0
