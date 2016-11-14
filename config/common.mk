@@ -128,7 +128,7 @@ vendor/orion/prebuilt/common/app/Substratum/Substratum.apk:system/app/Substratum
 # SuperSU
 ifneq ($(NEEDS_SYSTEMMODE_SU),true)
  PRODUCT_COPY_FILES += \
-     vendor/orion/prebuilt/common/etc/SystemModeSuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+     vendor/orion/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
      vendor/orion/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 else
  PRODUCT_COPY_FILES += \
